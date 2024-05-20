@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Typography */
+p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #6a11cb;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6a11cb;
+}
+
+/* Inline Navigation Links (Django Block Menu) */
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #6a11cb;
+}
+
+/* Main Content */
+main {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+main h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+main p {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+#footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 40px);
+    margin-left: -20px;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Interactive Elements */
+button,
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary {
+    background: #6a11cb;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #2575fc;
+    transform: scale(1.05);
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    #footer {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}

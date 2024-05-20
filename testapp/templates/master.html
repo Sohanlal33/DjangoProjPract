@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load testapp_tags %}
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width={device-width}, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'mytheme.css' %}">
+</head>
+
+<body>
+    <p>{% today %}</p>
+    {% block menu %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+    <div id="footer">
+        Our New Website - 2024
+    </div>
+</body>
+
+</html>

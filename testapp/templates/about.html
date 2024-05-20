@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+{% load testapp_tags %}
+{% block menu %}
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contract</a>
+{% endblock %}
+
+{% block content %}
+<h1>About Page</h1>
+<h2>{{text | quotes}}</h2>
+<p>DevOps will increasingly integrate with AI and ML to automate and optimize software development and deployment
+    processes,
+    enhancing agility and efficiency. AI-driven predictive analytics and ML models will further refine DevOps
+    practices by
+    anticipating issues and streamlining operations. This synergy will lead to more intelligent, self-managing
+    systems,
+    drastically reducing human intervention and increasing reliability and scalability.</p>
+{% endblock %}
